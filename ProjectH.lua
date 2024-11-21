@@ -1,6 +1,8 @@
 -- Project H
 -- Made by @axudcasufa and @Op3rationaI (last letter is a uppercase i lol)
 
+-- Version 0.2
+
 local ProjectH = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local Top = Instance.new("Frame")
@@ -615,7 +617,7 @@ local function PFLJRBN_fake_script() -- ProjectH.ProjectH-BDEXEC
 		if attached == nil then
 			return false, "Not attached";
 		else
-			attached:InvokeServer(source);
+			attached:InvokeServer("h",source);
 			return true, "Executed successfully!";
 		end
 	end
@@ -641,7 +643,7 @@ Please, attach a backdoor.
 		]])
 		loadstring(CODE.Text)();
 	else
-		InjectionAttachment:InvokeServer(CODE.Text);
+		InjectionAttachment:InvokeServer("h",CODE.Text);
 	end
 end)
 
@@ -649,7 +651,7 @@ RESET.MouseButton1Click:Connect(function()
 	if InjectionAttachment == nil then
 		messagenotify("You have to inject to a backdoor first!");
 	else
-		InjectionAttachment:InvokeServer("game.Players."..game.Players.LocalPlayer.Name..":LoadCharacter();");
+		InjectionAttachment:InvokeServer("h","game.Players."..game.Players.LocalPlayer.Name..":LoadCharacter();");
 		messagenotify("Successfully reset character.")
 	end
 end)
@@ -658,7 +660,7 @@ R6.MouseButton1Click:Connect(function()
 	if InjectionAttachment == nil then
 		messagenotify("You have to inject to a backdoor first!");
 	else
-		InjectionAttachment:InvokeServer("require(3068366282):Fire('"..game.Players.LocalPlayer.Name.."');");
+		InjectionAttachment:InvokeServer("h","require(3068366282):Fire('"..game.Players.LocalPlayer.Name.."');");
 		messagenotify("Successfully changed rig type to R6.")
 	end
 end)
