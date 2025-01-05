@@ -1,5 +1,50 @@
--- Coded by @jasperthesillyy on discord
--- IriXa Inject Watermark code
+--[[
+                                                 
+            @@@@                   @@            
+          @@@@@@@               @@@@@@@          
+         @@@@@@@@@@            @@@@@@@@@         IriXa
+        @@@@@@@@@@@@          @@@@@@@@@@@        -----------
+       @@@@@@@@@@@@@@        @@@@@@@@@@@@        External Executor
+        @@@@@@@@@@@@@@     @@@@@@@@@@@@@@        
+         @@@@@@@@@@@@@     @@@@@@@@@@@@@         
+          @@@@@@@@@@@@@   @@@@@@@@@@@@@          
+           @@@@@@@@@@@@@ @@@@@@@@@@@@@           
+           @@@@@@@@@@@@@@@@@@@@@@@@@@            
+             @@@@@@@@@@@@@@@@@@@@@@@             
+             @@@@@@@@@@@@@@@@@@@@@@              
+              @@@@@@@@@@@@@@@@@@@@               
+               @@@@@@@@@@@@@@@@@@                
+               @@@@@@@@@@@@@@@@@@                
+              @@@@@@@@@@@@@@@@@@@@               
+             @@@@@@@@@@@@@@@@@@@@@@              
+            @@@@@@@@@@@@@@@@@@@@@@@@             
+           @@@@@@@@@@@@@@@@@@@@@@@@@@            
+          @@@@@@@@@@@@@  @@@@@@@@@@@@@           
+          @@@@@@@@@@@@    @@@@@@@@@@@@@          
+         @@@@@@@@@@@@@    @@@@@@@@@@@@@@         
+        @@@@@@@@@@@@@      @@@@@@@@@@@@@@        
+       @@@@@@@@@@@@@        @@@@@@@@@@@@@@   
+
+Inject animation made by @jasperthesillyy on discord.
+IriXa by @ega_biba and @slendyvn.
+
+94% UNC woawwwwwwwww
+]]
+
+local function notify(Text)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "IriXa";
+		Text = Text;
+		Duration = 3;
+	})
+end
+
+if _G.IriXaLaunched == true then
+	notify("IriXa had already been launched!");
+else
+	_G.IriXaLaunched = true;
+	notify("IriXa had been successfully injected!");
+end
 
 local IriXa = Instance.new("ScreenGui")
 local IriXaLogo = Instance.new("ImageLabel")
