@@ -41,6 +41,8 @@ end
 
 if _G.IriXaLaunched == true then
 	notify("IriXa had already been launched!");
+	--// The line below loads the API expansion thingy
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/blcarchives/StupidFuckingScripts/refs/heads/main/awg.lua", true))();
 else
 	_G.IriXaLaunched = true;
 	notify("IriXa had been successfully injected!");
