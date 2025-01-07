@@ -44,6 +44,7 @@ if _G.IriXaLaunched == true then
 else
 	_G.IriXaLaunched = true;
 	notify("IriXa had been successfully injected!");
+	error("Process terminated!");
 end
 
 local IriXa = Instance.new("ScreenGui")
